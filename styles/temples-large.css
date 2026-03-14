@@ -1,0 +1,26 @@
+@media (min-width: 768px) {
+    #menu-button {
+        display: none;
+    }
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        border: none;
+        gap: 24px;
+    }
+    nav-menu a {
+        padding: 0;
+        border: none;
+        font-size: 0.95rem;
+    }
+    .nav-menu a:hover {
+        background-color: transparent;
+        text-decoration: underline;
+        opacity: 0.8;
+    }
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
