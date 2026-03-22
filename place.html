@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Country Page</title>
+    <meta name="description" content="A tool to learn a little about my country, Bolivia. The show some of the most important places in Bolivia, such as the Salar de Uyuni, the Lake Titicaca, the Madidi National Park, and many more.picteres of my country">
+    <meta name="keywords" content="Country, Bolivia, Places">
+    <meta name="author" content="Jonatan Troche Almedia"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/places.css">
+    <link rel="stylesheet" href="styles/places-large.css">
+    <script src="scripts/places.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Bolivia</h1>
+    </header>
+
+    <main>
+        <picture>
+            <source media="(min-width: 800px)" srcset="images/salar.webp">
+            
+            <img src="images/salar-phone.webp" alt="Landscape of Bolivia" class="hero-image">
+        </picture>
+
+        <div class="info-container">
+            <section class="card data-card">
+                <h2>Data</h2>
+                <div class="data-list">
+                    <p><span class="label">Area: </span>1,098,581 km²</p>
+                    <p><span class="label">Population: </span>12,388,571</p>
+                    <p><span class="label">Capital: </span>Sucre</p>
+                    <p><span class="label">Language: </span>Spanish, Quechua, Aymara</p>
+                    <p><span class="label">Currency: </span>Bolivian Boliviano (BOB)</p>
+                    <p><span class="label">Time Zone: </span>UTC-4</p>
+                    <p><span class="label">Calling Code: </span>+591</p>
+                    <p><span class="label">Internet TLD: </span>.bo</p>
+                </div>
+            </section>
+
+            <section class=" card weather-card">
+                <h2>Weather</h2>
+                <div class="weather-icon-container">
+                    <svg viewBox="0 0 64 64" width="80" height="80" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 10 V 6 M24 42 V 38 M10 24 H 6 M42 24 H 38 M14.1 14.1 L 11.3 11.3 M33.9 33.9 L 36.7 36.7 M14.1 33.9 L 11.3 36.7 M33.9 14.1 L 36.7 11.3" stroke="#F8E000" stroke-width="4" stroke-linecap="round" />
+                        <circle cx="24" cy="24" r="10" fill="#F8E000" />
+                        <path d="M48 46 H 22 A 10 10 0 0 1 22 26 A 14 14 0 0 1 46 22 A 12 12 0 0 1 48 46 Z" fill="#ffffff" stroke="#333333" stroke-width="3" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="weather-list">
+                    <p><span class="label">Temperature:</span> <span id="temp"></span></p>
+                    <p><span class="label">Conditions:</span> <span id="condition"></span></p>
+                    <p><span class="label">Wind:</span> <span id="wind"></span></p>
+                    <p><span class="label">Wind Chill:</span> <span id="windChill"></span></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Jonatan Troche Almedia. La Paz, Bolivia </p>
+        <p>BOLIVIA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

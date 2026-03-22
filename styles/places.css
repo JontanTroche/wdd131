@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #D52B1E; /* Rojo */
+    --secondary-color: #F8E000; /* Amarillo */
+    --tertiary-color: #007A33; /* Verde */
+    --text-color: #333333;
+    --bg-color: #f4f4f4;
+    --card-bg: #ffffffd9;
+    --border-color: #dddddd;
+    --shadow-color: #0000001a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* herader */
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom: 8px solid var(--secondary-color);
+    position: relative;
+}
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+/* main content */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top: 8px solid var(--tertiary-color);
+}
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+/* cards */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #000000;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #cccccc;
+    padding-bottom: 0.5rem;
+}
+
+/* card info */
+.data-list p, .weather-list p {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.data-list span.label, .weather-list span.label {
+    font-weight: bold;
+    width: 110px;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.weather-icon-container {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    line-height: 1;
+}
+.weather-icon-container svg {
+    width: 80px;
+    height: 80px;
+    color: var(--text-color);
+}
+
+/* footer */
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
