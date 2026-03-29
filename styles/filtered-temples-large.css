@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+    #menu-button {
+        display: none; 
+    }
+    .nav-menu {
+        display: flex; 
+        flex-direction: row;
+        position: static; 
+        width: auto;
+        border: none;
+        gap: 15px;
+    }
+    .nav-menu a {
+        padding: 10px 15px;
+        border: none;
+        font-size: 0.95rem;
+        border-radius: 4px;
+    }
+    .nav-menu a:hover {
+        text-decoration: none;
+    }
+    .temple-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    }
+}
