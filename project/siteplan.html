@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/siteplan.css">
+    <title>Site plan - Guitar Mastery tracker</title>
+</head>
+<body>
+    <header>
+        <h1>Web Project Planning</h1>
+        <p>WDD 131 - Dynamic Web Fundamentals</p>
+    </header>
+
+    <main>
+        <section id="site-name">
+            <h2>1. Site Name</h2>
+            <div class="site-name-box">
+                <h3>ShredLog: Guitar Mastery Tracker</h3>
+                <p><strong>Description:</strong> I chose this name because it combines the term "Shred" (associated with technical and fast guitar playing, common in genres like progressive metal) with "Log" (record), which clearly defines the application's purpose.</p>
+                <p><strong>Why I chose it:</strong> As a guitarist with 15 years of experience, I am looking for a tool that projects professionalism and discipline. The name is short, easy to remember, and communicates that the site is for musicians who are serious about their technical progress.</p>
+                <p><em>Optional Domain Availability: shredlog.app / guitarmastery.io</em></p>
+            </div>
+        </section>
+
+         <section id="site-purpose">
+            <h2>2. Site Purpose</h2>
+            <p>The purpose of <strong>ShredLog</strong> is to provide a specialized digital environment for guitarists to organize, track, and analyze their practice routines. The site offers:</p>
+            <ul>
+                <li>A centralized dashboard to monitor weekly goals and overall progress.</li>
+                <li>A real-time practice timer with categorization (Scales, Repertoire, Theory, Improvisation).</li>
+                <li>A historical data log to visualize technical growth and maintain long-term discipline.</li>
+            </ul>
+        </section>
+
+        <section id="target-audience">
+            <h2>3. Target Audience</h2>
+            <p>The target audience for this website includes:</p>
+            <ul>
+                <li><strong>Intermediate to Advanced Guitarists:</strong> Specifically those focused on high-technical proficiency (shredding, prog-metal) who need to measure their speed and accuracy gains.</li>
+                <li><strong>Music Students:</strong> Individuals enrolled in formal music programs who need a reliable way to log their mandatory practice hours.</li>
+                <li><strong>Self-Taught Musicians:</strong> Hobbyists seeking structure and visual motivation to avoid "plateaus" in their learning journey.</li>
+            </ul>
+            <p><strong>Audience Needs:</strong> These users require a fast, mobile-responsive interface that doesn't distract them from their instrument but provides meaningful data about their efforts.</p>
+        </section>
+
+        <section id="scenarios">
+            <h2>4. Scenarios</h2>
+            <p>The following questions represent the needs of my target audience and guide the content of the website:</p>
+            <ul>
+                <li>"How can I track my daily practice time to ensure I am meeting my weekly goal of 10 hours?"</li>
+                <li>"Can I categorize my practice sessions to see if I'm spending too much time on theory and not enough on technical exercises like scales?"</li>
+                <li>"Is there a way to save a quick note about a specific difficulty I faced during my session so I can focus on it tomorrow?"</li>
+            </ul>
+        </section>
+
+         <section id="color-palette">
+            <h2>5. Color Palette</h2>
+            <p>Based on the branding goals for <strong>ShredLog</strong>, I have selected a high-contrast palette that evokes energy and technical precision:</p>
+            
+            <div class="color-swatch-container">
+                <div class="color-swatch">
+                    <div class="swatch" style="background-color: #1a1a1a;"></div>
+                    <p><strong>Primary</strong><br>#1a1a1a<br>Headers & Branding</p>
+                </div>
+                <div class="color-swatch">
+                    <div class="swatch" style="background-color: #ff4500;"></div>
+                    <p><strong>Secondary</strong><br>#ff4500<br>Accents & Buttons</p>
+                </div>
+                <div class="color-swatch">
+                    <div class="swatch" style="background-color: #121212;"></div>
+                    <p><strong>Background</strong><br>#121212<br>Main Canvas</p>
+                </div>
+                <div class="color-swatch">
+                    <div class="swatch" style="background-color: #e0e0e0;"></div>
+                    <p><strong>Typography</strong><br>#e0e0e0<br>Body Text</p>
+                </div>
+            </div>
+            
+            <p><strong>Palette Logic:</strong> Using Black/Charcoal creates an elegant, high-end image associated with quality musical gear. The <strong>Flame Orange</strong> provides the necessary "pop" for call-to-action buttons (like starting the timer), creating a sense of urgency and excitement.</p>
+        </section>
+
+        <section id="typography">
+            <h2>6. Typography</h2>
+            <p>Following the <em>Google Fonts Choosing Guide</em>, I have selected two font families that balance aesthetic "personality" with technical functionality:</p>
+            
+            <div class="typography-details">
+                <h3>Font 1: Montserrat (Headings & Navigation)</h3>
+                <p><strong>Application:</strong> H1, H2, H3, and Main Navigation buttons.</p>
+                <p><strong>Justification:</strong> As a <em>Geometric Sans-Serif</em>, Montserrat projects a modern, tech-focused personality that aligns with the "Shredding" and "Gear" culture of guitarists. Its high x-height and bold weights make it an ideal <strong>Display font</strong> for short, high-impact text like page titles and time displays.</p>
+
+                <h3>Font 2: Roboto (Body Text & Practice Logs)</h3>
+                <p><strong>Application:</strong> Paragraphs, list items, table data (logs), and form labels.</p>
+                <p><strong>Justification:</strong> Roboto is a <strong>"workhorse" font</strong> known for its neutral yet friendly appearance. Because the app will handle a "flood of words" in the notes section and complex numerical data in the practice logs, Roboto's high legibility at small point sizes (16pt and below) ensures the user remains focused on their data without eye strain.</p>
+            </div>
+        </section>
+
+        <section id="wireframes">
+            <h2>7. Wireframes</h2>
+            <p>The following diagrams represent the structural layout for the Home Page (Dashboard) across different screen sizes:</p>
+            
+            <div class="wireframe-container">
+                <!-- Mobile Wireframe -->
+                <div class="wireframe mobile-mock">
+                    <span class="wf-label">Mobile View</span>
+                    <div class="wf-layout">
+                        <div class="wf-box wf-header">[Logo / Menu]</div>
+                        <div class="wf-box wf-hero">[Weekly Stats Summary]</div>
+                        <div class="wf-box wf-content">[Main Action: Start Timer]</div>
+                        <div class="wf-box wf-content">[Latest Log Preview]</div>
+                        <div class="wf-box wf-footer">[Footer / Social]</div>
+                    </div>
+                </div>
+
+                <div class="wireframe desktop-mock">
+                    <span class="wf-label">Desktop View</span>
+                    <div class="wf-layout">
+                        <div class="wf-box wf-header">[Logo / Horizontal Navigation / User Profile]</div>
+                        <div class="desktop-grid">
+                            <div class="wf-box wf-sidebar">[Practice Goals & Streaks]</div>
+                            <div class="wf-layout">
+                                <div class="wf-box wf-hero">[Large Visual Progress Chart]</div>
+                                <div class="wf-box wf-content">[Primary Tool: Session Timer & Category Picker]</div>
+                            </div>
+                        </div>
+                        <div class="wf-box wf-footer">[Footer Links]</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Jonatan - WDD 131 Project Plan</p>
+    </footer>
+</body>
+</html>
