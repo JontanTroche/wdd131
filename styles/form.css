@@ -1,0 +1,111 @@
+/* colors */
+:root {
+        --darkgreen: #1b4332;
+        --midgreen: #2d6a4f;
+        --graybg: #d1d5db;
+    }
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    .page {
+        font-family: 'Lato', sans-serif;
+        background-color: #f8f9fa;
+    }
+    .title {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .formbox {
+        background-color: var(--graybg);
+        max-width: 500px;
+        margin: 2rem auto;
+        padding: 1.5rem;
+        border-radius: 4px;
+    }
+    .top {
+        background-color: var(--darkgreen);
+        color: white;
+        padding: 1.5rem;
+        text-align: center;
+    }
+    .row {
+        margin-bottom: 1.25rem;
+    }
+    .label {
+        display: block;
+        font-weight: 700;
+        margin-bottom: 0.25rem;
+        color: #333;
+    }
+    .opt {
+        color: #4b5563;
+        font-size: 0.85rem;
+        font-weight: normal;
+    }
+    .field {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+    }
+    .stars {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 0.5rem;
+    }
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon {
+        font-size: 1.2rem;
+        margin-bottom: 2px;
+    }
+    .btn {
+        background-color: #f3f4f6;
+        border: 1px solid #9ca3af;
+        color: #111827;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 1.2rem;
+        width: 100%;
+        padding: 0.75rem;
+        cursor: pointer;
+        margin-top: 1rem;
+    }
+    .btn:hover {
+        background-color: #e5e7eb;
+    }
+    .bottom {
+        background-color: var(--darkgreen);
+        color: white;
+        padding: 2rem;
+        text-align: center;
+        margin-top: auto;
+    }
+    .mainbody {
+        flex-grow: 1;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        background-color: var(--darkgreen);
+        color: #ffffff;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        font-size: 1rem;
+    }
+    
+    footer p {
+        margin: 5px 0;
+    }
+    
+    #lastmodified {
+        color: #ffffff;
+        background-color: transparent;
+    }

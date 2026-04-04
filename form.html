@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="description" content="Product review form page. Created by Jonatan Troche.">
+    <meta name="keywords" content="Product review form page">
+    <meta name="author" content="Jonatan Troche Almedia"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+    
+<body class="page min-h-screen flex flex-col">
+
+    <header class="top">
+        <h1 class="title text-2xl uppercase tracking-wider font-bold">Product Review</h1>
+    </header>
+
+    <main class="mainbody">
+        <section class="formbox shadow-sm">
+            <form action="review.html" method="get">
+                
+                <!-- Product Selection -->
+                <div class="row">
+                    <label for="productName" class="label">Product Name</label>
+                    <select id="productName" name="productName" class="field" required>
+                        <option value="" disabled selected>Choose a Product ...</option>
+                    </select>
+                </div>
+
+                <!-- Rating Section -->
+                <div class="row">
+                    <label class="label">Overall Rating</label>
+                    <div class="stars">
+                        <div class="item">
+                            <span class="icon">☆</span>
+                            <input type="radio" id="star1" name="rating" value="1" required>
+                        </div>
+                        <div class="item">
+                            <span class="icon">☆☆</span>
+                            <input type="radio" id="star2" name="rating" value="2">
+                        </div>
+                        <div class="item">
+                            <span class="icon">☆☆☆</span>
+                            <input type="radio" id="star3" name="rating" value="3">
+                        </div>
+                        <div class="item">
+                            <span class="icon">☆☆☆☆</span>
+                            <input type="radio" id="star4" name="rating" value="4">
+                        </div>
+                        <div class="item">
+                            <span class="icon">☆☆☆☆☆</span>
+                            <input type="radio" id="star5" name="rating" value="5">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Date Selection -->
+                <div class="row">
+                    <label for="installDate" class="label">Date of Installation</label>
+                    <input type="date" id="installDate" name="installDate" class="field" required>
+                </div>
+
+                <!-- Features Checkboxes -->
+                <div class="row">
+                    <label class="label">Which features did you find useful? <br><span class="italic font-normal text-sm">(Check all that apply)</span></label>
+                    <div class="mt-2 space-y-1">
+                        <div class="flex items-center gap-2">
+                            <input type="checkbox" id="f-durability" name="features" value="Durability">
+                            <label for="f-durability" class="font-normal">Durability</label>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <input type="checkbox" id="f-ease" name="features" value="Ease of Use">
+                            <label for="f-ease" class="font-normal">Ease of Use</label>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <input type="checkbox" id="f-performance" name="features" value="Performance">
+                            <label for="f-performance" class="font-normal">Performance</label>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <input type="checkbox" id="f-design" name="features" value="Design">
+                            <label for="f-design" class="font-normal">Design</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Text -->
+                <div class="row">
+                    <label for="writtenReview" class="label">Written Review <span class="opt">(Optional)</span></label>
+                    <textarea id="writtenReview" name="writtenReview" rows="4" class="field"></textarea>
+                </div>
+
+                <!-- User Name -->
+                <div class="row">
+                    <label for="userName" class="label">Your User Name <span class="opt">(Optional)</span></label>
+                    <input type="text" id="userName" name="userName" class="field">
+                </div>
+
+                <!-- Submit -->
+                <input type="submit" value="Post Review" class="btn">
+            </form>
+        </section>
+    </main>
+        
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Jonatan Troche Almedia. La Paz, Bolivia </p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+</html>
