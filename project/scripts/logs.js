@@ -2,6 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const sessions = StorageController.getSessions();
     const tbody = document.querySelector('#logs-table tbody');
     const filter = document.getElementById('filter-category');
+    const clearBtn = document.getElementById('clear-btn');
+
+    //button functinoability
+    if (clearBtn) {
+        clearBtn.addEventListener('click', () => {
+            StorageController.clearAll();
+        });
+    }
 
     const render = (data) => {
         tbody.innerHTML = '';

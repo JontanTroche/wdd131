@@ -17,7 +17,7 @@
     <header>
         <div class="logo">
             <a href="shredLog-home.html">
-                <h1>ShredLog</h1>
+                <p class="logo-text">ShredLog</p>
             </a>
         </div>
         <nav>
@@ -30,7 +30,7 @@
     </header>
     <main>
         <section id="history-filter">
-            <h2>Session History</h2>
+            <h1>Session History</h1>
             <div class="filter-controls">
                 <label for="filter-category">Filter by Category:</label>
                 <select id="filter-category">
@@ -44,7 +44,7 @@
         </section>
 
         <section id="history-table">
-            <h3 class="visually-hidden">Session List</h3>
+            <h2 class="visually-hidden">Session List</h2>
             <div class="table-container">
                 <table id="logs-table">
                     <thead>
@@ -60,7 +60,7 @@
                 </table>
             </div>
             <div>
-                <button onclick="StorageController.clearAll()" class="btn-clear">Clear All History</button>
+                <button id="clear-btn" class="btn-clear">Clear All History</button>
             </div>
         </section>
     </main>

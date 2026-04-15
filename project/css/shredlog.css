@@ -38,7 +38,7 @@ header {
     z-index: 1000;
 }
 
-.logo h1 {
+.logo-text {
     font-family: var(--font-heading);
     color: var(--secondary-color);
     font-size: 1.5rem;
@@ -78,7 +78,7 @@ main {
     width: 100%;
 }
 
-h2, h3 {
+h1, h2, h3 {
     font-family: var(--font-heading);
     margin-bottom: 1.5rem;
     color: var(--secondary-color);
