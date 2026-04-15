@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('session-form');
 
     startBtn.addEventListener('click', () => {
-        // Evitar múltiples intervalos si se presiona varias veces
         if (timerId) clearInterval(timerId);
         
         timerId = setInterval(() => {
@@ -32,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         
-        // Para pruebas, podrías comentar esta restricción o bajarla a 0.1 min
         const durationMinutes = Math.floor(seconds / 60);
 
         if (seconds < 60) {
@@ -48,12 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
             notes: document.getElementById('notes').value || "Sin notas."
         };
 
-        // Guardar usando nuestro controlador
         StorageController.saveSession(session);
         
         alert(`¡Excelente sesión! Has registrado ${durationMinutes} minutos de práctica.`);
         
-        // Redirigir al historial
         window.location.href = 'logs.html';
     });
 });

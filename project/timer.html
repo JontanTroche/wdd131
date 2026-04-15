@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ShredLog Dashboard - The main page of this site—where a practice session is recorded—is the page where the user will log each session.">
+    <meta name="description" content="The main page of this site—where a practice session is recorded—is the page where the user will log each session.">
     <meta name="author" content="Jonatan Troche Almedia">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/shredLog.css">
+    <link rel="stylesheet" href="css/shredlog.css">
     <script src="scripts/storage.js"></script>
     <script src="scripts/timer.js" defer></script>
     <title>ShredLog | Dashboard</title>
@@ -22,7 +22,7 @@
             </div>
         <nav>
             <ul>
-                <li><a href="shredLog-home.html">Dashboard</a></li>
+                <li><a href="shredlog-home.html">Dashboard</a></li>
                 <li><a href="timer.html">Practice</a></li>
                 <li><a href="logs.html">History</a></li>
             </ul>
@@ -45,6 +45,7 @@
                 <div class="form-group">
                     <label for="category">Practice Category:</label>
                     <select id="category" name="category" required>
+                        <option value="" disabled selected>Select a category...</option>
                         <option value="Scales">Scales & Technique</option>
                         <option value="Repertoire">Song Repertoire</option>
                         <option value="Theory">Music Theory</option>

@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const sessions = StorageController.getSessions();
     const tbody = document.querySelector('#logs-table tbody');
-    // Corregido: El ID en el HTML es 'filter-category'
     const filter = document.getElementById('filter-category');
 
     const render = (data) => {
@@ -24,10 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Carga inicial
     render(sessions);
 
-    // Lógica de filtrado
     if (filter) {
         filter.addEventListener('change', (e) => {
             const val = e.target.value;

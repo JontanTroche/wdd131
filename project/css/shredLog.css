@@ -134,6 +134,15 @@ form {
     gap: 5px;
 }
 
+select:invalid {
+    color: #888; /* Color gris para el placeholder */
+}
+
+option {
+    color: white; /* Color normal para las opciones reales */
+    background-color: var(--card-bg);
+}
+
 label {
     font-weight: bold;
     font-size: 0.9rem;
