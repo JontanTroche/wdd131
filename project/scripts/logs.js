@@ -7,19 +7,18 @@ document.addEventListener('DOMContentLoaded', () => {
         tbody.innerHTML = '';
         
         if (data.length === 0) {
-            tbody.innerHTML = '<tr><td colspan="4" style="text-align:center; padding: 20px;">No hay sesiones registradas. ¡Hora de practicar!</td></tr>';
-            return;
+            tbody.innerHTML = `<tr><td colspan="4" class="empty-msg">No hay sesiones registradas.</td></tr>`;
+        return;
         }
 
         data.forEach(s => {
-            const row = document.createElement('tr');
-            row.innerHTML = `
-                <td>${s.date}</td>
-                <td><strong style="color: var(--secondary-color)">${s.category}</strong></td>
-                <td>${s.duration} min</td>
-                <td>${s.notes}</td>
-            `;
-            tbody.appendChild(row);
+            tbody.innerHTML += `
+                <tr>
+                    <td>${s.date}</td>
+                    <td><strong class="category-highlight">${s.category}</strong></td>
+                    <td>${s.duration} min</td>
+                    <td>${s.notes}</td>
+                </tr>`;
         });
     };
 
